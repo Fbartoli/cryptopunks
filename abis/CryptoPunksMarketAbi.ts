@@ -4,7 +4,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "name",
     outputs: [{ name: "", type: "string" }],
-    payable: false,
+    stateMutability: "view",
     type: "function",
   },
   {
@@ -18,7 +18,7 @@ export const CryptoPunksMarketAbi = [
       { name: "minValue", type: "uint256" },
       { name: "onlySellTo", type: "address" },
     ],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -26,7 +26,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "punkIndex", type: "uint256" }],
     name: "enterBidForPunk",
     outputs: [],
-    payable: true,
+    stateMutability: "payable",
     type: "function",
   },
   {
@@ -34,7 +34,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "totalSupply",
     outputs: [{ name: "", type: "uint256" }],
-    payable: false,
+    stateMutability: "view",
     type: "function",
   },
   {
@@ -45,7 +45,7 @@ export const CryptoPunksMarketAbi = [
     ],
     name: "acceptBidForPunk",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -53,7 +53,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "decimals",
     outputs: [{ name: "", type: "uint8" }],
-    payable: false,
+    stateMutability: "view",
     type: "function",
   },
   {
@@ -64,7 +64,7 @@ export const CryptoPunksMarketAbi = [
     ],
     name: "setInitialOwners",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -72,7 +72,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "withdraw",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -80,7 +80,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "imageHash",
     outputs: [{ name: "", type: "string" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -88,7 +88,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "nextPunkIndexToAssign",
     outputs: [{ name: "", type: "uint256" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -96,7 +96,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "", type: "uint256" }],
     name: "punkIndexToAddress",
     outputs: [{ name: "", type: "address" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -104,7 +104,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "standard",
     outputs: [{ name: "", type: "string" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -117,7 +117,7 @@ export const CryptoPunksMarketAbi = [
       { name: "bidder", type: "address" },
       { name: "value", type: "uint256" },
     ],
-    payable: false,
+    stateMutability: "view",
     type: "function",
   },
   {
@@ -125,7 +125,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "", type: "address" }],
     name: "balanceOf",
     outputs: [{ name: "", type: "uint256" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -133,7 +133,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "allInitialOwnersAssigned",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -141,7 +141,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "allPunksAssigned",
     outputs: [{ name: "", type: "bool" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -149,7 +149,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "punkIndex", type: "uint256" }],
     name: "buyPunk",
     outputs: [],
-    payable: true,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -160,7 +160,7 @@ export const CryptoPunksMarketAbi = [
     ],
     name: "transferPunk",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -168,7 +168,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "symbol",
     outputs: [{ name: "", type: "string" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -176,7 +176,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "punkIndex", type: "uint256" }],
     name: "withdrawBidForPunk",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -187,7 +187,7 @@ export const CryptoPunksMarketAbi = [
     ],
     name: "setInitialOwner",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -199,7 +199,7 @@ export const CryptoPunksMarketAbi = [
     ],
     name: "offerPunkForSaleToAddress",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -207,7 +207,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [],
     name: "punksRemainingToAssign",
     outputs: [{ name: "", type: "uint256" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -218,7 +218,7 @@ export const CryptoPunksMarketAbi = [
     ],
     name: "offerPunkForSale",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -226,7 +226,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "punkIndex", type: "uint256" }],
     name: "getPunk",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -234,7 +234,7 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "", type: "address" }],
     name: "pendingWithdrawals",
     outputs: [{ name: "", type: "uint256" }],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
   {
@@ -242,10 +242,15 @@ export const CryptoPunksMarketAbi = [
     inputs: [{ name: "punkIndex", type: "uint256" }],
     name: "punkNoLongerForSale",
     outputs: [],
-    payable: false,
+    stateMutability: "nonpayable",
     type: "function",
   },
-  { inputs: [], payable: true, type: "constructor" },
+  {
+    inputs: [],
+    payable: true,
+    type: "constructor",
+    stateMutability: "payable",
+  },
   {
     anonymous: false,
     inputs: [

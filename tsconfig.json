@@ -17,10 +17,13 @@
     "noEmit": true,
     "lib": ["ES2022"],
     "target": "ES2022",
+    "types": [
+      "bun-types" // add Bun global
+    ],
 
     // Skip type checking for node modules
     "skipLibCheck": true
   },
   "include": ["./**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "./data"]
 }
